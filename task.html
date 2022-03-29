@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <div>
+        <h1><strong>My feedback form</strong></h1>
+    </div>
+    <form>
+        <ul>
+            <div>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required placeholder="Type your name" minlength="3" maxlength="15"> <br>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Type your Email"><br>
+                </li>
+                <li>
+                    <label for="pw">Password:</label>
+                    <input type="password" id="pw" required placeholder="Type your Password"><br>
+                </li>
+                <li>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" required><br>
+                </li>
+            </div>
+            <li>
+                <label for="movies">Please check all the emotions that apply to you:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox"><label for="">Angry</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox"><label for="">Sad</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox"><label for="">Happy</label><br>
+                    </li>
+                    <li>
+                        <input type="checkbox"><label for="">Ambivalent</label><br>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <label for="">How satisfied were you with our service?</label>
+                <ul>
+                    <li>
+                        <input type="radio" id="very satisfied" name="How satisfied were you with our service?"><label for="very satisfied">Very satisfied</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="satisfied" name="How satisfied were you with our service?"><label for="satisfied">Satisfied</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="didn't care" name="How satisfied were you with our service?"><label for="didn't care">Didn't care</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="dissatisfied" name="How satisfied were you with our service?"><label for="dissatisfied">Dissatisfied</label><br>
+                    </li>
+                    <li>
+                        <input type="radio" id="very dissatisfied" name="How satisfied were you with our service?"><label for="very dissatisfied">Very dissatisfied</label><br>
+                    </li>
+                </ul>
+                <li>
+                    <label for="comments">Frther comments</label>
+                    <textarea name="" id="comments" cols="30" rows="5"></textarea><br>
+                </li>
+                <li>
+                    <label for="bio photo">Bio photo</label>
+                    <input type="url" id="bio photo" placeholder="Url">
+                    <input type="file" multiple accept="image/*"><br>
+                </li>
+                <li>
+                    <label for="select">Location visited:</label>
+                    <select name="" id="select">
+                        <option value="">USA</option>
+                        <option value="">Canada</option>
+                        <option value="">Kzakhstan</option>
+
+                    </select>
+                </li>
+            </li>
+           <br> <li>
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
